@@ -1,0 +1,14 @@
+.container {
+    max-width: 80%;
+    margin: 2rem auto;
+}
+
+.paginate-container {
+    display: flex;
+    justify-content: center;
+}
+
+.paginate {
+    width: 80rem;
+    
+}

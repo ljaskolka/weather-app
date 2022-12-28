@@ -1,0 +1,250 @@
+.weather {
+    width: 60rem;
+    border-radius: 6px;
+    color: white;
+    margin: 4rem auto 0 auto;
+    
+}
+
+.top, .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.city {
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.weather-description {
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    line-height: 1;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    margin-left: 2rem;
+}
+
+.weather-icon {
+    width: 50%;
+    height: 100%;
+    margin-right: 2rem;
+}
+
+.temperature {
+    font-weight: 600;
+    font-size: 4rem;
+    width: auto;
+    letter-spacing: -5px;
+    margin: 10px 0;
+    margin-left: 2rem;
+}
+
+.details {
+    width: 100%;
+}
+
+/* .parameter-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parameter-label {
+    text-align: left;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.parameter-value {
+    text-align: right;
+    font-weight: 600;
+    font-size: 1rem;
+} */
+
+.middle {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: repeat(3, 10rem);
+    grid-template-rows: repeat(2, 6rem);
+    text-align: center;
+}
+
+.parameter-value {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.parameter-detail {
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+}
+
+.humidity, .windspeed {
+    margin-bottom: 1rem;
+}
+
+
+.between {
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 0.25rem;
+    border-radius: 25px;
+    filter: blur(0.03rem);
+}
+
+@media screen and (max-width: 450px) {
+    .city {
+        font-size: 2rem;
+        letter-spacing: 0.75px;
+        padding-bottom: 1rem;
+    }
+        
+    .weather-icon {
+        width: 40%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .top {
+        padding: 0;
+    }
+
+    .temperature {
+        font-size: 3rem;
+        letter-spacing: -3px;
+        margin-left: 1rem;
+        text-align: center;
+    }
+
+    .left {
+        justify-content: center;
+    }
+
+    .middle {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .mobile {
+        width: 19rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details {
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, 6rem);
+    }
+  
+}
+
+@media screen and (min-width: 451px) and (max-width: 850px) {
+    .city {
+        font-size: 2rem;
+        letter-spacing: 0.75px;
+        padding-bottom: 1rem;
+    }
+        
+    .weather-icon {
+        width: 40%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .top {
+        padding: 0;
+    }
+
+    .temperature {
+        font-size: 3rem;
+        letter-spacing: -3px;
+        margin-left: 1rem;
+        text-align: center;
+    }
+
+    .left {
+        justify-content: center;
+    }
+
+    .middle {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .mobile {
+        width: 38rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details {
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, 6rem);
+    }
+  
+}
+
+@media screen and (min-width: 851px) and (max-width: 1099px) {
+    .mobile {
+        width: 80%;
+    }
+
+    .weather-icon {
+        width: 50%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .between {
+        width: 0;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1300px) {
+    .mobile {
+        width: 100%;
+    }
+
+    .weather-icon {
+        width: 50%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .between {
+        width: 0;
+    }
+}

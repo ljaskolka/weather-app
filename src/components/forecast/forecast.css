@@ -1,0 +1,96 @@
+
+
+.daily-container {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+}
+
+.daily-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 18rem;
+    background-image: linear-gradient(#ffffff25, #ffffff10 );
+    border-radius: 25px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.day-container {
+   height: 3rem; 
+}
+
+.day {
+    font-size: 1.25rem;
+}
+
+.icon-container {
+    height: 10rem;
+}
+
+.icon-small {
+    max-width: 8rem;
+}
+
+.min-max {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.description {
+    font-weight: 300;
+}
+
+.accordion-container {
+    margin-top: 10rem;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 12rem);
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+@media screen and (max-width: 450px) {
+    .accordion-container {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        grid-template-columns: repeat(2, auto);
+        gap: 0px;
+    }
+
+    .daily-item {
+        margin-top: 0;
+        margin: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 451px) and (max-width: 850px) {
+    .accordion-container {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        grid-template-columns: repeat(3, auto);
+        gap: 0px;
+    }
+
+    .daily-item {
+        margin-top: 0;
+        margin: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 851px) and (max-width: 1300px) {
+    .accordion-container {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        grid-template-columns: repeat(4, auto);
+        gap: 0px;
+    }
+}
+
